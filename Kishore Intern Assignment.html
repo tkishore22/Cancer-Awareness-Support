@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancer Awareness & Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">KishoreTrust</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#quotes">Live Quotes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cta" href="#contact">Get Support</a>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero__text">
+        <p class="eyebrow">Cancer Awareness & Support</p>
+        <h1>Information, encouragement, and community in one place.</h1>
+        <p class="lede">
+          Learn the signs, connect with support groups, and share hope. Together we can make early detection, treatment, and recovery easier for every family.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Talk to us</a>
+          <a class="btn ghost" href="#quotes">Read uplifting quotes</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1200&q=80" alt="Pink cancer awareness ribbon in caring hands">
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="icon">🔍</div>
+        <h3>Know the signs</h3>
+        <p>Early detection saves lives. Explore common warning signs and when to speak with a doctor.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🤝</div>
+        <h3>Find support</h3>
+        <p>Connect with counselors, survivor stories, and local groups that understand your journey.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🎗️</div>
+        <h3>Volunteer & donate</h3>
+        <p>Join community drives, help with transport, or contribute to treatment assistance funds.</p>
+      </article>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <div class="stat__number">12K+</div>
+        <div class="stat__label">Families reached</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">350</div>
+        <div class="stat__label">Volunteer partners</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">78%</div>
+        <div class="stat__label">Report improved wellbeing</div>
+      </div>
+    </section>
+
+    <section class="quotes" id="quotes">
+      <div class="quotes__header">
+        <div>
+          <p class="eyebrow">Real-time encouragement</p>
+          <h2>Uplifting quotes to keep you going</h2>
+        </div>
+        <button class="btn ghost" id="refreshQuotes">Refresh quotes</button>
+      </div>
+      <div class="quotes__list" id="quoteList">
+        <div class="quote skeleton"></div>
+        <div class="quote skeleton"></div>
+        <div class="quote skeleton"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__info">
+        <p class="eyebrow">Contact us</p>
+        <h2>Share your story or request support</h2>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your full name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required placeholder="How can we support you?"></textarea>
+        </label>
+        <button type="submit" class="btn primary">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>KishoreTrust © 2025</div>
+    <div class="footer__links">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://cancer.org" target="_blank" rel="noreferrer">Learn more</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
